@@ -1,0 +1,102 @@
+doctype
+html
+
+	head
+		title Movus
+		include ./includes/_head.jade
+	body.mobileonly.tablet.laptop
+		.top-line
+		.head
+			.wraper
+				.contact-line.clearfix
+					| Багатоканальний телефон:
+					a(href="tel:")  +38 (097) 909-69-22
+					a.pull-right(href="#") Наші контакти
+				.clearfix
+				.logo.col-4x
+					img(src="images/logo.png")
+				.benefit.benefit_bg1.col-4x
+					.benefit__icon
+						span.icon.icon_zoom-people
+					.benefit__text
+						|багаторічний досвід
+				.benefit.benefit_bg2.col-4x
+					.benefit__icon
+						span.icon.icon_board
+					.benefit__text 
+						|інтерактивні методи
+				.benefit.benefit_bg3.col-4x
+					.benefit__icon
+						span.icon.icon_tie
+					.benefit__text
+						|індивідуальний підхід до кожного
+		.clearfix
+		.wraper
+			a(href="#")
+				.sandwich
+					span
+					span
+					span
+			ul.menu
+				li
+					a(href="#") Головна	
+				li
+					a(href="#") Про нас
+				li
+					a(href="#") Послуги
+				li
+					a(href="#") Англійська
+					ul.submenu
+						li
+							a(href="#") Вивчення англійської мови
+						li
+							a(href="#") Індивідуальні курси
+						li
+							a(href="#") Поглиблені
+				li
+					a(href="#") Французька
+					ul.submenu
+						li
+							a(href="#") Вивчення французької мови
+						li
+							a(href="#") Індивідуальні курси
+						li
+							a(href="#") Поглиблені
+				li
+					a(href="#") Німецька
+				li
+					a(href="#") Контакти		
+			.content
+				.content-text
+					h2(style="color:rgb(63,78,134);font-size:25px;")  Найчастіші питання
+					p.
+						Скільки разів ви, ваші друзі, знайомі чи родичі починали вчити іноземну мову і через деякий час залишали справу «до кращих часів»,
+						бо поки що не виходить.
+					p.
+						Скільки разів ви знали слова, але боялися сказати: раптом щось неправильно?
+					p.
+						Скільки разів ви не могли згадати таке просте і точно відоме вам слово?
+					p.
+						І, як наслідок,	срах, сором, комплекси «я ніколи не зможу вивчити іншу мову».
+					p.
+						Що потрібно, щоб дійсно розмовляти іноземною мовою?
+					p(style="color:rgb(63,78,134);").
+						МЕТА! Ви повині мати свою власну мету, для того вам потрібна іноземна мова.<br>
+						Мета повина бути чітка й прозора, а головне- мати чіткі часові межі. Якщо у вас є мета- 80% успіху у вас в кишені.
+				h2(style="margin-bottom:20px;") Колектив Мовного центру «МОВУС» працює для Вас, якщо Ви:
+				-var goals=[{"icon":"icon-m_person","text":" колись вчили англійську, але забули її повністю, не використовували її або так і не навчилися будувати речення"},{"icon":"icon-m_clock","text":"хочете швидко та ефективно вивчити мову"},{"icon":"icon-m_talk","text":" набридло відчувати збентеження у діалозі з іноземцями"},{"icon":"icon-m_cheir","text":" хочете досягти рузультату у кар'єрному рості, але для цього потрібне володіння іноземною мовою"},{"icon":"icon-m_lamp","text":" дуже довго обирали між курсами та школами,але так і не обрали"},{"icon":"icon-m_calendar","text":" цінуєте свій час і справді хочете «заговорити», а також навчитись читати та розуміти"}]
+				each item,i in goals
+					.col-3x.col-2x.row
+						.goals.vfix
+							.goals__icon-m
+								span.icon-m(class=item.icon)
+							span.goals__text=item.text
+					if !((i+1)%2)
+						.clearfix.show-tablet
+					if !((i+1)%3)
+						.clearfix.show-laptop
+			.clearfix
+			.bottom-line
+			.footer
+				©2014 Мовус Всі права захищені.
+				a.pull-right(href="tel:") +38 (097) 909-69-22
